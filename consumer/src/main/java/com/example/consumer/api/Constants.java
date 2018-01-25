@@ -1,11 +1,10 @@
 package com.example.consumer.api;
 
-/**
- * @author Zoltan Altfatter
- */
+
 public class Constants {
 
-    public static final String DEAD_LETTER_QUEUE_NAME = "payment-orders.dead-letter.queue";
-    public static final String INCOMING_QUEUE_NAME = "payment-orders.incoming.queue";
+    public static final String DEAD_LETTER_EXCHANGE_NAME = "dle-tmm";
+    //业务消息最大生命时长
+    public static final int RETRY_DELAY = 3600 * 1000;
 
 }
